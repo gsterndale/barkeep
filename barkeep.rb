@@ -1,3 +1,4 @@
+require 'lib/initialize_with_attrs'
 require 'lib/drink'
 require 'lib/cocktail'
 require 'lib/martini'
