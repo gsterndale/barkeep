@@ -10,5 +10,6 @@ describe Barkeep::Martini, "with a mixer" do
   let(:mixer) { 'vermouth' }
   subject { Barkeep::Martini.new(:mixer => mixer) }
   its(:ingredients) { should include mixer }
+  its(:ingredients) { should have(1).items }
 end
 
