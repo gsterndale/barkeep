@@ -1,1 +1,1 @@
-require 'lib/drink'
+require 'lib/martini'
