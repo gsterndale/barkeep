@@ -1,7 +1,15 @@
 module Barkeep
-  module Cocktail
+  module Drink
+    module Cocktail
 
-    attr_accessor :garnish, :mixer
+      include Drink
 
+      attr_accessor :garnish, :mixer
+
+      def ingredients
+        self.mixer ? super << self.mixer : super
+      end
+
+    end
   end
 end

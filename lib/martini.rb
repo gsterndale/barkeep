@@ -1,8 +1,7 @@
 module Barkeep
   class Martini
 
-    include Drink
-    include Cocktail
+    include Drink::Cocktail
 
   end
 end
