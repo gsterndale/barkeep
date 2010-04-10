@@ -8,8 +8,7 @@ module InitializeWithAttrsSpec
 end
 
 describe InitializeWithAttrsSpec::Book, "initialized with attribute Hash" do
-  subject { InitializeWithAttrsSpec::Book.new(:pages => 123) }
-  it "should have attributes with values from Hash" do
-    subject.pages.should == 123
-  end
+  subject { InitializeWithAttrsSpec::Book.new(:pages => pages) }
+  let(:pages) { 123 }
+  its(:pages) { should == pages }
 end
