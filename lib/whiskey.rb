@@ -1,9 +1,7 @@
 module Barkeep
-  class Martini
+  class Whiskey
 
     include Drink
-    include Cocktail
 
   end
 end
-
