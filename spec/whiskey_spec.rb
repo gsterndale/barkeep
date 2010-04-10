@@ -1,6 +1,5 @@
 require 'spec/spec_helper'
 
 describe Barkeep::Whiskey do
-  it { should have_attribute(:booze) }
-  it { should have_attribute(:glass) }
+  it_should_behave_like "a drink"
 end
