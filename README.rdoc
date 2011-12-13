@@ -1,0 +1,5 @@
+= Barkeep
+
+Sample codes for Straight Up RSpec talk
+
+Copyright (c) 2011 Greg Sterndale. See LICENSE for details.
