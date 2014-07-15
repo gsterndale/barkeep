@@ -3,5 +3,8 @@ module Barkeep
 
     include Drink
 
+    def self.neat
+      new booze: 'whiskey'
+    end
   end
 end
