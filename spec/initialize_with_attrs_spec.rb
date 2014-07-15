@@ -8,11 +8,11 @@ module InitializeWithAttrsSpec
 end
 
 describe InitializeWithAttrsSpec::Book, "initialized with attribute Hash" do
-  subject { InitializeWithAttrsSpec::Book.new(:pages => pages) }
+  subject(:book) { InitializeWithAttrsSpec::Book.new(:pages => pages) }
   let(:pages) { 123 }
 
   describe '#pages' do
-    subject { super().pages }
+    subject { book.pages }
     it { is_expected.to eq(pages) }
   end
 end
