@@ -1,7 +1,23 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    activesupport (4.1.4)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    ast (2.0.0)
+    astrolabe (0.5.1)
+      parser (~> 2.1)
     diff-lcs (1.2.5)
+    i18n (0.6.11)
+    json (1.8.1)
+    minitest (5.4.0)
+    parser (2.1.9)
+      ast (>= 1.1, < 3.0)
+      slop (~> 3.4, >= 3.4.5)
+    rainbow (2.0.0)
     rspec (2.99.0)
       rspec-core (~> 2.99.0)
       rspec-expectations (~> 2.99.0)
@@ -10,9 +26,21 @@ GEM
     rspec-expectations (2.99.1)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.99.1)
+    slop (3.5.0)
+    thread_safe (0.3.4)
+    transpec (2.3.3)
+      activesupport (>= 3.0, < 5.0)
+      astrolabe (>= 0.5.1, < 0.6)
+      bundler (~> 1.3)
+      json (~> 1.8)
+      parser (>= 2.1.6, < 3.0)
+      rainbow (>= 1.99.1, < 3.0)
+    tzinfo (1.2.1)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rspec (~> 2.99)
+  transpec
