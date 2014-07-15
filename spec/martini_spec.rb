@@ -8,15 +8,15 @@ end
 
 describe Barkeep::Martini, "with a mixer" do
   let(:mixer) { 'vermouth' }
-  subject { Barkeep::Martini.new(:mixer => mixer) }
+  subject(:martini) { Barkeep::Martini.new(:mixer => mixer) }
 
   describe '#ingredients' do
-    subject { super().ingredients }
+    subject { martini.ingredients }
     it { is_expected.to include mixer }
   end
 
   describe '#ingredients' do
-    subject { super().ingredients }
+    subject { martini.ingredients }
 
     it 'has 1 item' do
       expect(subject.size).to eq(1)
