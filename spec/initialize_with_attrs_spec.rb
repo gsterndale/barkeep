@@ -10,5 +10,9 @@ end
 describe InitializeWithAttrsSpec::Book, "initialized with attribute Hash" do
   subject { InitializeWithAttrsSpec::Book.new(:pages => pages) }
   let(:pages) { 123 }
-  its(:pages) { should == pages }
+
+  describe '#pages' do
+    subject { super().pages }
+    it { is_expected.to eq(pages) }
+  end
 end
