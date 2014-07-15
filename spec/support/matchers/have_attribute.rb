@@ -30,12 +30,12 @@ module AttributeMatchers
       @names_not_responded_to.empty?
     end
 
-    def failure_message_for_should
+    def failure_message
       "expected #{@target.inspect} to respond to " <<
         @names_not_responded_to.collect {|name| name.inspect }.join(', ')
     end
 
-    def failure_message_for_should_not
+    def failure_message_when_negated
       "expected #{@target.inspect} not to respond to " <<
         @names_responded_to.collect {|name| name.inspect }.join(', ')
     end
