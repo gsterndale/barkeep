@@ -7,4 +7,3 @@ module InitializeWithAttrs
     super(*args)
   end
 end
-

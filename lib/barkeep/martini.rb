@@ -5,4 +5,3 @@ module Barkeep
 
   end
 end
-

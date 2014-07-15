@@ -73,4 +73,3 @@ module AttributeMatchers
   alias_method :have_writable_attribute_named, :have_writable_attribute
 
 end
-

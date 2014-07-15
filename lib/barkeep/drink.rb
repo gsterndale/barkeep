@@ -11,4 +11,3 @@ module Barkeep
 
   end
 end
-

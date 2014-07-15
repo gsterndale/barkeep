@@ -23,4 +23,3 @@ describe Barkeep::Martini, "with a mixer" do
     end
   end
 end
-
