@@ -1,5 +1,7 @@
 = Barkeep
 
-Sample codes for Straight Up RSpec talk
+Sample codes for "Straight Up RSpec 3" talk
+
+Upgrading, going beyond the basics, introducing some elegant features and promoting readability.
 
 Copyright (c) 2014 Greg Sterndale. See LICENSE for details.
