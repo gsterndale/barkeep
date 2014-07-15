@@ -1,4 +1,4 @@
-share_examples_for "a drink" do
+shared_examples_for "a drink" do
   it { is_expected.to have_attribute(:booze) }
   it { is_expected.to have_attribute(:glass) }
   it { is_expected.to have_readable_attribute(:ingredients) }

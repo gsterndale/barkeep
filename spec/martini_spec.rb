@@ -19,7 +19,7 @@ describe Barkeep::Martini, "with a mixer" do
     subject { super().ingredients }
 
     it 'has 1 item' do
-      expect(subject.items.size).to eq(1)
+      expect(subject.size).to eq(1)
     end
   end
 end
